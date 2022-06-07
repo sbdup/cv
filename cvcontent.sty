@@ -1,0 +1,242 @@
+\usepackage{fontawesome}
+\usepackage[hidelinks]{hyperref}
+
+%-------------------------------------------------------------------------------
+%
+%                HEADER
+%
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%                Colors
+%-------------------------------------------------------------------------------
+
+\definecolor{color0}{rgb}{0,0,0}% black
+\definecolor{color2}{rgb}{0.45,0.45,0.45}% dark grey
+
+%-------------------------------------------------------------------------------
+%                Fonts
+%-------------------------------------------------------------------------------
+
+\newcommand*{\namefont}{\fontsize{34}{36}\mdseries\upshape}
+\newcommand*{\rolefont}{\LARGE\mdseries\slshape}
+\newcommand*{\detailsfont}{\small\mdseries\slshape}
+
+%-------------------------------------------------------------------------------
+%                Styles
+%-------------------------------------------------------------------------------
+
+\newcommand*{\namestyle}[1]{{\namefont\textcolor{color0}{\bf{#1}}}}
+\newcommand*{\rolestyle}[1]{{\rolefont\textcolor{color2}{\bf{#1}}}}
+\newcommand*{\detailsstyle}[1]{{\detailsfont\textcolor{color2}{#1}}}
+
+%-------------------------------------------------------------------------------
+%                Icons
+%-------------------------------------------------------------------------------
+
+\newcommand{\iconmail}{{\small\faEnvelopeO}~}
+\newcommand{\iconphone}{{\Large\faMobile}~}
+\newcommand{\iconlinkedin}{{\small\faLinkedin}~}
+\newcommand{\icongithub}{{\small\faGithub}~}
+
+%-------------------------------------------------------------------------------
+%                Details
+%-------------------------------------------------------------------------------
+
+\newcommand{\pathprofilphoto}{pictures/profil.jpg}
+\newcommand{\name}{\namestyle{Sébastien DUPONT}}
+\newcommand{\role}{\rolestyle{DevOps Freelance}}
+\newcommand{\addressstreet}{\detailsstyle{115 bis Rue des Pyrénées}}
+\newcommand{\addresscity}{\detailsstyle{75020 PARIS}}
+\newcommand{\mail}{\detailsstyle{\iconmail{\href{mailto:sebastien.dupont88@gmail.com}{sebastien.dupont88@gmail.com}}}}
+\newcommand{\phone}{\detailsstyle{\iconphone{06 47 24 88 27}}}
+\newcommand{\linkedin}{\detailsstyle{\iconlinkedin{\href{https://www.linkedin.com/in/sdupont88/}{linkedin.com/in/sdupont88/}}}}
+\newcommand{\github}{\detailsstyle{\icongithub{\href{https://github.com/sbdup}{github.com/sbdup}}}}
+\newcommand{\dob}{\detailsstyle{04/01/1988}}
+\newcommand{\age}{\detailsstyle{34 ans}}
+\newcommand{\desc}{De nature curieuse, je participe régulièrement à des meetups afin de découvrir les nouvelles tendances technologiques 
+et comment les utiliser pour répondre aux défis à venir.}
+
+%-------------------------------------------------------------------------------
+%
+%                BODY
+%
+%-------------------------------------------------------------------------------
+%-------------------------------------------------------------------------------
+%                Company
+%-------------------------------------------------------------------------------
+
+\newcommand{\ouidouname}{Ouidou Consulting}
+\newcommand{\ouidoudate}{Nov 2019 - Fev 2022}
+
+\newcommand{\infotelname}{Infotel Conseil}
+\newcommand{\infoteldate}{Nov 2015 - Oct 2019}
+
+\newcommand{\inrianame}{INRIA}
+\newcommand{\inriadate}{Mars 2012 - Sept 2012}
+
+%-------------------------------------------------------------------------------
+%                BNP 
+%-------------------------------------------------------------------------------
+
+\newcommand{\bnptitle}{BNP Paribas}
+\newcommand{\bnppathicon}{pictures/bnp.png}
+\newcommand{\bnprole}{Cloud Architecte}
+\newcommand{\bnpdate}{Mai 2021 - Fev 2022}
+\newcommand{\bnpcontent}{
+  Documentation des méthodologies et concepts existants pour optimiser la résilience d'un système.\\
+  Les principaux sujets abordés sont:
+  \begin{itemize}
+    \item Le monitoring et l'observabilité d'un système. 
+    \item L'isolation et la réduction des effets provoqués par un incident.
+    \item La réduction du temps nécessaire au recouvrement à la suite d'un sinistre.
+  \end{itemize} 
+}
+\newcommand{\bnpkeys}{Disaster Recovery, Patterns de résilience, Kubernetes, CI/CD, GitOps, Chaos Engineering}
+
+%-------------------------------------------------------------------------------
+%                LVMH 
+%-------------------------------------------------------------------------------
+
+\newcommand{\lvmhtitle}{LVMH - PCIS}
+\newcommand{\lvmhpathicon}{pictures/lvmh.png}
+\newcommand{\lvmhrole}{DevOps}
+\newcommand{\lvmhdate}{Mars 2020 - Fev 2022}
+\newcommand{\lvmhcontent}{
+  Accompagnement des équipes Dev et Ops sur les périmètres Dior et Guerlain.
+  \begin{itemize}
+    \item Résolution d'incidents, de problèmes de configuration et d'indisponibilité de la production.
+    \item Audit de performances backend et frontend du site e-commerce Dior.
+    \item Reverse engineering, extraction et migration de certains composants d'une plateforme legacy vers le Cloud.
+    \item Mise en place d'une plateforme de monitoring pour les logs applicatifs.
+    \item Rédaction de documents d'architecture.
+  \end{itemize}
+}
+\newcommand{\lvmhkeys}{Azure, Kubernetes, Terraform, Java, CI/CD, GitOps, FluxCD, ELK}
+
+%-------------------------------------------------------------------------------
+%                DGA 
+%-------------------------------------------------------------------------------
+
+\newcommand{\dgatitle}{Direction Générale de l'Armement}
+\newcommand{\dgapathicon}{pictures/dga.png}
+\newcommand{\dgarole}{Chef de Projet Technique}
+\newcommand{\dgadate}{Nov 2019 - Fev 2022}
+\newcommand{\dgacontent}{
+  Chef de projet et lead developpeur sur une application de gestion des partenariats entre des PME et le ministère.
+  \begin{itemize}
+    \item Gestion de projet et rédaction des différents documents contractuels.
+    \item Revue de code et montée en compétence des collaborateurs juniors.
+    \item Veille sur les nouvelles vulnérabilités et maintien de la sécurité de la plateforme.
+    \item Mise à jour complète des composants de la plateforme (OS, base de données, serveurs web, Java).
+  \end{itemize}	
+}
+\newcommand{\dgakeys}{Java, Spring, Hibernate, PostgreSQL, Tomcat, CentOS}
+
+%-------------------------------------------------------------------------------
+%                Hadopi 
+%-------------------------------------------------------------------------------
+
+\newcommand{\hadopititle}{Hadopi}
+\newcommand{\hadopipathicon}{pictures/hadopi.jpg}
+\newcommand{\hadopirole}{Lead Dev Java}
+\newcommand{\hadopidate}{Nov 2019 - Dec 2019}
+\newcommand{\hadopicontent}{
+  Migration de l'application en charge de la diffusion et de la protection des oeuvres sur Internet de Java 7 vers Java 11.
+}
+\newcommand{\hadopikeys}{Java, Spring, Hibernate}
+
+%-------------------------------------------------------------------------------
+%                EPO 
+%-------------------------------------------------------------------------------
+
+\newcommand{\epotitle}{European Patent Office}
+\newcommand{\epopathicon}{pictures/epo.png}
+\newcommand{\eporole}{Lead Dev Java}
+\newcommand{\epodate}{Nov 2015 - Oct 2019}
+\newcommand{\epocontent}{
+  Lead développeur sur une dizaine d'applications intervenant dans la gestion du cycle de vie d'un brevet.
+  \begin{itemize}
+    \item En charge de l'implémentation des différentes évolutions ainsi que du maintien en condition opérationnelle.
+    \item Migration du backend Cobol vers Java.
+    \item Montée en compétences des développeurs juniors.
+  \end{itemize}
+}
+\newcommand{\epokeys}{Java, Spring, Hibernate, DB2, Groovy}
+
+%-------------------------------------------------------------------------------
+%                Enedis 
+%-------------------------------------------------------------------------------
+
+\newcommand{\enedistitle}{Enedis}
+\newcommand{\enedispathicon}{pictures/enedis.png}
+\newcommand{\enedisrole}{Lead Dev Java}
+\newcommand{\enedisdate}{Mai 2017 - Juin 2017}
+\newcommand{\enediscontent}{
+  Renforcement de l'équipe en charge du développement d'une application de gestion des sinistres sur le parc électrique Français.
+  \begin{itemize}
+    \item Réduction de la dette technique
+    \item Mise en place des bonnes pratiques
+  \end{itemize}
+}
+\newcommand{\enediskeys}{Java, Spring, Hibernate, PostgreSQL}
+
+%-------------------------------------------------------------------------------
+%                INRIA
+%-------------------------------------------------------------------------------
+
+\newcommand{\marelletitle}{Equipe MARELLE}
+\newcommand{\marellepathicon}{pictures/inria.png}
+\newcommand{\marellerole}{Stagiaire}
+\newcommand{\marelledate}{Mars 2012 - Sept 2012}
+\newcommand{\marellecontent}{
+  Validation du logiciel Easycrypt, un outil d'aide à la réalisation de preuves cryptographiques et à destination des cryptographes,
+  pour montrer qu'il n'y a pas d'erreur dans les règles cryptographiques du logiciel.
+}
+\newcommand{\marellekeys}{Cryptographie, Easycrypt, OAEP, IND-CPA, IND-CCA, RSA}
+
+%-------------------------------------------------------------------------------
+%                Diplômes 
+%-------------------------------------------------------------------------------
+\newcommand{\grade}{Master 2}
+\newcommand{\gradetitle}{Ingénierie et Fondements de l'Informatique}
+\newcommand{\gradedate}{2012}
+\newcommand{\gradeschool}{Polytech Nice}
+\newcommand{\gradeschoolpathicon}{pictures/grade.png}
+\newcommand{\gradecity}{Sophia-Antipolis}
+\newcommand{\gradecontent}{Spécialité Cryptographie, Sécurité, Systèmes et Réseaux}
+
+%-------------------------------------------------------------------------------
+%                Certifications 
+%-------------------------------------------------------------------------------
+\newcommand{\ckatitle}{CKA}
+\newcommand{\ckadate}{2022}
+\newcommand{\ckacontent}{Certified Kubernetes Administrator}
+\newcommand{\ckapathicon}{pictures/cka.png}
+
+\newcommand{\psmonetitle}{PSM1}
+\newcommand{\psmonedate}{2018}
+\newcommand{\psmonecontent}{Professional Scrum Master 1}
+\newcommand{\psmonepathicon}{pictures/psm1.png}
+
+\newcommand{\ccenttitle}{CCENT}
+\newcommand{\ccentdate}{2015}
+\newcommand{\ccentcontent}{Certified Cisco Entry Netork Technician}
+
+\newcommand{\ibmcsamulticloudtitle}{IBMCSA - Multicloud Management}
+\newcommand{\ibmcsamulticlouddate}{Juil 2021}
+\newcommand{\ibmcsamulticloudcontent}{IBM Certified Solution Architect - Cloud Pak for Multicloud Management}
+
+\newcommand{\ibmcsadatatitle}{IBMCSA - Data}
+\newcommand{\ibmcsadatadate}{Juil 2021}
+\newcommand{\ibmcsadatacontent}{IBM Certified Solution Architect - Cloud Pak for Data}
+
+%-------------------------------------------------------------------------------
+%                Compétences Techniques
+%-------------------------------------------------------------------------------
+\newcommand{\skilldev}{Java, Terraform, Ansible, Bash}
+\newcommand{\skilldb}{PostgreSQL, MSSQL, DB2}
+\newcommand{\skillcontainer}{Kubernetes, Docker}
+\newcommand{\skillcloud}{Azure}
+\newcommand{\skillmonitoring}{ELK}
+\newcommand{\skillcicd}{Jenkins, FluxCD, GitOps}
+\newcommand{\skilllangage}{Français, Anglais}

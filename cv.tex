@@ -1,0 +1,60 @@
+\documentclass[10pt, a4paper, sans]{cvlayout}
+
+\usepackage{cvcontent}
+
+\newlength{\sectionvspace}
+\setlength{\sectionvspace}{0.4cm}
+
+\begin{document}
+
+%-------------------------------------------------------------------------------
+%                Header
+%-------------------------------------------------------------------------------
+\makecvheader
+
+%-------------------------------------------------------------------------------
+%                Expériences Professionnelles
+%-------------------------------------------------------------------------------
+\section*{\titleline{Expériences Professionnelles}}
+\boxcompany{\ouidouname}{\ouidoudate}{
+  \boxclient{\bnppathicon}{\bnprole}{\bnpdate}{\bnpcontent}{\bnpkeys}
+  \boxclient{\lvmhpathicon}{\lvmhrole}{\lvmhdate}{\lvmhcontent}{\lvmhkeys}
+  \boxclient{\dgapathicon}{\dgarole}{\dgadate}{\dgacontent}{\dgakeys}
+}
+
+\boxcompany{\infotelname}{\infoteldate}{
+  \boxclient{\epopathicon}{\eporole}{\epodate}{\epocontent}{\epokeys}
+  \boxclient{\enedispathicon}{\enedisrole}{\enedisdate}{\enediscontent}{\enediskeys}
+}
+
+\boxcompany{\inrianame}{\inriadate}{
+  \boxclient{\marellepathicon}{\marellerole}{\marelledate}{\marellecontent}{\marellekeys}
+}
+
+% %-------------------------------------------------------------------------------
+% %                Diplomes
+% %-------------------------------------------------------------------------------
+\vspace*{\sectionvspace}
+\section*{\titleline{Dipl\^omes}}
+\boxgrade{\gradeschoolpathicon}{\grade}{\gradedate}{\gradetitle}{\gradecontent}
+
+% %-------------------------------------------------------------------------------
+% %                Certifications
+% %-------------------------------------------------------------------------------
+\vspace*{\sectionvspace}
+\section*{\titleline{Certifications}}
+\boxcertifications
+    {\ckapathicon}{\ckacontent}{\ckadate}
+    {\psmonepathicon}{\psmonecontent}{\psmonedate}
+
+% %-------------------------------------------------------------------------------
+% %                Compétences Techniques
+% %-------------------------------------------------------------------------------
+\vspace*{\sectionvspace}
+\section*{\titleline{Compétences Techniques}}
+\boxskills{Développement}{\skilldev}{Base de données}{\skilldb}
+  \boxskills{Orchestration}{\skillcontainer}{Cloud}{\skillcloud}
+  \boxskills{CI/CD}{\skillcicd}{Monitoring}{\skillmonitoring}
+  \boxskills{Langues}{\skilllangage}{}{}
+
+\end{document}
